@@ -1,0 +1,3 @@
+Name: Read Sharepoint Sites
+Share Tools: openapi.yaml
+Share Credential: github.com/gptscript-ai/gateway-oauth2 as sharepoint.sites.read with GPTSCRIPT_GRAPH_MICROSOFT_COM_BEARER_TOKEN as env and microsoft365 as integration and "Sites.Read.All User.Read offline_access" as scope
