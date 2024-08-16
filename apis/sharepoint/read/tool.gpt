@@ -1,3 +1,8 @@
 Name: Read Sharepoint Sites
+type: context
 Share Tools: openapi.yaml
 Share Credential: github.com/gptscript-ai/gateway-oauth2 as sharepoint.sites.read with GPTSCRIPT_GRAPH_MICROSOFT_COM_BEARER_TOKEN as env and microsoft365 as integration and "Sites.Read.All User.Read offline_access" as scope
+
+#!sys.echo
+
+When using the site_ListSite tool, the search query parameter is mandatory. If you have no specific thing to look for, use `*`. Do not put a `$` in front of the search query param.
