@@ -1,0 +1,4 @@
+name: listFiles
+Description: List files in the current user's Google Drive.
+
+#!/usr/bin/env python3 ${GPTSCRIPT_TOOL_DIR}/listFiles.py
