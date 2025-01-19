@@ -1,0 +1,39 @@
+---
+Name: Google Calendar
+Metadata: bundle: true
+Description: Tools for interacting with a user's Google Calendar
+Share Tools: Search Google Calendar Events,
+
+---
+Name: Search Google Calendar Events
+Description: Search Google Calendar for an event matching certain criteria
+Credential: ../credential
+param: search_query: Words to search for in Event title, description, or location.
+param: calendar_id: (optional) the ID of the calendar to search inside. If not set, defaults to using the user's primary calendar.
+param: start_time_range: (optional) an RFC3339 timestamp with mandatory timezone offset. If not set, defaults to the start of the current day.
+param: end_time_range: (optional) an RFC3339 timestamp with mandatory timezone offset. If not set, defaults to the end of the current day.
+
+#!${GPTSCRIPT_TOOL_DIR}/bin/gptscript-go-tool searchCalendar
+
+---
+Name: Google Calendar Context
+Type: context
+
+#!sys.echo
+
+## Instructions for using Google Calendar tools
+
+
+## End of instructions for using Google Calendar tools
+
+---
+!metadata:*:category
+Google Calendar
+
+---
+!metadata:*:icon
+/admin/assets/google_calendar.png
+
+---
+!metadata:*:oauth
+google
